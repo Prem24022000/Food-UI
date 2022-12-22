@@ -80,6 +80,20 @@ img {
   border-radius: 5px;
 }
 
+/* --------Move------- */
+
+.move {
+  background-color: white;
+  color: black;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.move a {
+  color: black;
+}
+
 /* --------Header-------- */
 
 header {
@@ -94,9 +108,11 @@ header {
 /* -------- Navber-Section---------- */
 
 nav {
+  transition: all 0.8s;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 30px 60px;
 }
 
 nav h1 {
@@ -251,6 +267,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1025px) {
+  /* --------Universal--------- */
   img {
     width: 200px;
   }
