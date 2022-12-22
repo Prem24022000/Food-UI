@@ -1,0 +1,291 @@
+/* --------Universal--------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  line-height: 1.6;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.white {
+  color: white;
+}
+
+img {
+  width: 300px;
+}
+
+.container {
+  padding: 30px 60px;
+  height: 100%;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: 2rem;
+  color: red;
+}
+
+.card {
+  width: 350px;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.center {
+  text-align: center;
+}
+
+.center p {
+  margin-bottom: 40px;
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-2 img {
+  width: 100px;
+  clip-path: circle(50px);
+}
+
+.flex-2 p {
+  margin: 10px 0;
+  width: 350px;
+}
+
+.flex-2 .card-2 {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+/* --------Header-------- */
+
+header {
+  background-image: url("Images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
+}
+
+/* -------- Navber-Section---------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a:hover {
+  color: rgb(241, 143, 143);
+}
+
+/* ------Header-Main----------- */
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.header-main h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.header-main p {
+  width: 750px;
+  text-align: center;
+}
+
+/* --------Button--------- */
+
+.btn {
+  margin: 30px;
+  border: none;
+  padding: 10px 30px;
+  background-color: rgb(240, 89, 89);
+  color: white;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.16);
+  letter-spacing: 4px;
+}
+
+/* --------About--------- */
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+#about p {
+  width: 600px;
+}
+
+#about img {
+  align-self: flex-start;
+  width: 600px;
+}
+
+/* --------Menu--------- */
+
+#menu .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  justify-items: center;
+}
+
+#menu .grid p {
+  text-align: start;
+  margin: 0;
+  margin-left: 23px;
+}
+
+/* ------Expert------ */
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.flex .card {
+  box-shadow: none;
+}
+
+#expert img {
+  width: 250px;
+}
+
+/* -------About-us------ */
+
+#about-us {
+  background-image: url("Images/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
+}
+
+/* -------Contact-us-------- */
+
+#contact-us .container {
+  background-image: url("Images/bg3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+
+#contact-us .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+  margin-top: 90px;
+}
+
+#contact-us .card input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+#contact-us .card :nth-child(4) {
+  height: 80px;
+}
+
+#contact-us .card :nth-child(5),
+#contact-us .card :nth-child(1) {
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+@media (max-width: 1025px) {
+  img {
+    width: 200px;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  /* --------About--------- */
+
+  #about img {
+    width: 350px;
+  }
+
+  #about p {
+    width: 450px;
+  }
+
+  /* ------Card-2------ */
+
+  .flex-2 .card-2 {
+    padding: 10px 10px;
+  }
+
+  .flex-2 p {
+    width: 300px;
+  }
+
+  /* -------Expert------- */
+
+  #expert img {
+    width: 200px;
+  }
+
+  #contact-us .card {
+    width: 300px;
+  }
+}
