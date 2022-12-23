@@ -26,6 +26,12 @@ img {
   width: 300px;
 }
 
+.menu-img {
+  width: 30px;
+  /* background-color: black; */
+  color: black;
+}
+
 .container {
   padding: 30px 60px;
   height: 100%;
@@ -88,6 +94,7 @@ img {
   position: fixed;
   width: 100%;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 
 .move a {
@@ -112,7 +119,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 10px 60px;
 }
 
 nav h1 {
@@ -208,6 +215,7 @@ nav ul li a:hover {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -215,6 +223,7 @@ nav ul li a:hover {
 
 .flex .card {
   box-shadow: none;
+  width: auto;
 }
 
 #expert img {
@@ -304,5 +313,108 @@ nav ul li a:hover {
 
   #contact-us .card {
     width: 300px;
+  }
+}
+
+@media (max-width: 769px) {
+  /* --------Navbar-------- */
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  /* ------About------ */
+
+  #about {
+    display: block;
+    margin: 0;
+  }
+
+  #about p {
+    width: 100%;
+  }
+
+  #about img {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  /* ---------Menu-------- */
+
+  #menu .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+    column-gap: 150px;
+    justify-items: center;
+  }
+
+  /* ----------About-us-------- */
+
+  .flex-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-2 .card-2 {
+    padding: 30px;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 426px) {
+  .move {
+    background-color: rgb(218, 87, 87);
+    color: white;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .header-main p,
+  .header-main h1 {
+    width: 400px;
+    text-align: center;
+  }
+
+  #menu .grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .header-main p,
+  .header-main h1 {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 321px) {
+  .header-main p,
+  .header-main h1 {
+    width: 200px;
+    text-align: center;
+  }
+
+  #about-us {
+    padding: 0px;
+  }
+
+  .flex-2 .card-2 {
+    padding: 0;
+  }
+
+  #contact-us .card {
+    width: 280px;
   }
 }
